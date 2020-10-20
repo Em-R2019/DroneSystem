@@ -134,10 +134,9 @@ public class Drone {
         
         double elevation = E.getElevation(truePosition);
         
-        if ( elevation > 99){
+        if ( elevation > 0.099){
             System.out.println("drone " + id + " in no-fly zone");
         }
-        
         else if (truePosition.getElevation() <= elevation && !(status == 3 || status == 5)){
             if (status != 6){
                 if (closestTMS != -1){

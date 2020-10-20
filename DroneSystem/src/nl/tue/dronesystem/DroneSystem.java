@@ -37,7 +37,7 @@ public class DroneSystem {
         M.create(E.map,F.getTMSposArray());
 
         int n = 0;
-        double nofly = 150; // time at which nofly zones appear
+        double nofly = 100; // time at which nofly zones appear
         double weather = 300; // time at which temperature and pressure change
         int printstep = 0;
         

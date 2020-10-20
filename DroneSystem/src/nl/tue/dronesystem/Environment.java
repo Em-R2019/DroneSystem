@@ -85,7 +85,7 @@ public class Environment {
             point.move(Utilities.randomDouble(-Math.PI,Math.PI), Utilities.randomDouble(-6,6));
             
             int [] loc = Utilities.Geo2Int(point,size,n);
-            double side = Utilities.randomDouble(0,0.05);
+            double side = Utilities.randomDouble(0,0.125);
             int intSide = (int) Math.round(side / (size/n));
             
             loc[0] = loc[0] - intSide/2;

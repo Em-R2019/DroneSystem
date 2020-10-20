@@ -184,7 +184,7 @@ public class TMS {
                 nextpoint.move(dir,dist);
                 route.appendPosition(nextpoint);
             }
-            else if (i == path.size()-1) {
+            else if (i == path.size()-1 || i < 5) {
                 route.appendPosition(nextpoint);
             }
             else if (location.distance(nextpoint)>(range+0.005)){
